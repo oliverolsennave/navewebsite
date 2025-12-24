@@ -316,6 +316,14 @@ input {
     color: var(--color-text);
 }
 
+.headline-mobile {
+    display: none;
+}
+
+.headline-desktop {
+    display: inline;
+}
+
 .hero-subtext {
     font-size: 1.125rem;
     color: var(--color-text-muted);
@@ -857,9 +865,15 @@ input {
     }
     
     .hero-headline {
-        font-size: 1.75rem;
-        white-space: nowrap;
         padding-top: var(--spacing-md);
+    }
+    
+    .headline-desktop {
+        display: none;
+    }
+    
+    .headline-mobile {
+        display: inline;
     }
     
     .form-group {
