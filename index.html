@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nave — Find Your Catholic Neighborhood</title>
+    <meta name="description" content="Nave is a Catholic culture heat map. Discover churches, missionaries, pilgrimages, schools, retreats, and Catholic businesses near you.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="assets/navelogonoshadow.svg" type="image/svg+xml">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="/" class="nav-logo">
+                <img src="assets/whitenavelogo.png" alt="Nave" class="logo-img">
+                <span class="logo-text">Nave</span>
+            </a>
+            <div class="nav-links">
+                <a href="about.html" class="nav-link">About</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <!-- Full-width video (visible on mobile) -->
+        <div class="hero-bg-video">
+            <video autoplay loop muted playsinline>
+                <source src="assets/forpres.mp4" type="video/mp4">
+            </video>
+        </div>
+        
+        <!-- Map Legend -->
+        <div class="hero-legend">
+            <div class="legend-title">Map Legend</div>
+            <ul class="legend-list">
+                <li class="legend-item">
+                    <span class="legend-dot" style="background: #3B82F6;"></span>
+                    <span class="legend-label">Church</span>
+                </li>
+                <li class="legend-item">
+                    <span class="legend-dot" style="background: #D4A017;"></span>
+                    <span class="legend-label">Missionary</span>
+                </li>
+                <li class="legend-item">
+                    <span class="legend-dot" style="background: #EF4444;"></span>
+                    <span class="legend-label">Pilgrimage</span>
+                </li>
+                <li class="legend-item">
+                    <span class="legend-dot" style="background: #A855F7;"></span>
+                    <span class="legend-label">Education</span>
+                </li>
+                <li class="legend-item">
+                    <span class="legend-dot" style="background: #22C55E;"></span>
+                    <span class="legend-label">Vocation</span>
+                </li>
+                <li class="legend-item">
+                    <span class="legend-dot" style="background: #F97316;"></span>
+                    <span class="legend-label">Retreat</span>
+                </li>
+                <li class="legend-item">
+                    <span class="legend-dot" style="background: #A1887F;"></span>
+                    <span class="legend-label">Business</span>
+                </li>
+                <li class="legend-item">
+                    <span class="legend-dot" style="background: #166534;"></span>
+                    <span class="legend-label">Campus</span>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-headline">Find your Catholic neighborhood.</h1>
+                <p class="hero-subtext">
+                    Nave is a Catholic culture heat map — connecting you to churches, missionaries, pilgrimages, schools, retreats, and Catholic businesses in your area.
+                </p>
+                
+                <form id="waitlist-form" class="hero-form">
+                    <div class="form-group">
+                        <input 
+                            type="email" 
+                            id="email-input" 
+                            name="email" 
+                            placeholder="Enter your email" 
+                            required
+                            autocomplete="email"
+                        >
+                        <button type="submit" class="btn-primary">
+                            Join the Waitlist
+                        </button>
+                    </div>
+                    <p class="form-note">Be the first to know when we launch on iOS.</p>
+                </form>
+                
+                <div id="form-success" class="form-success hidden">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M10 0C4.48 0 0 4.48 0 10s4.48 10 10 10 10-4.48 10-10S15.52 0 10 0zm-2 15l-5-5 1.41-1.41L8 12.17l7.59-7.59L17 6l-9 9z" fill="currentColor"/>
+                    </svg>
+                    <span>You're on the list! We'll be in touch.</span>
+                </div>
+            </div>
+            
+            <!-- Phone mockup (hidden on mobile) -->
+            <div class="hero-visual">
+                <div class="hero-phone">
+                    <div class="iphone-frame">
+                        <div class="iphone-screen">
+                            <video autoplay loop muted playsinline class="iphone-video">
+                                <source src="assets/forpres.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Desktop Legend (below both columns) -->
+        <div class="hero-legend hero-legend-desktop">
+            <div class="legend-title">Map Legend</div>
+            <ul class="legend-list">
+                <li class="legend-item">
+                    <span class="legend-dot" style="background: #3B82F6;"></span>
+                    <span class="legend-label">Church</span>
+                </li>
+                <li class="legend-item">
+                    <span class="legend-dot" style="background: #D4A017;"></span>
+                    <span class="legend-label">Missionary</span>
+                </li>
+                <li class="legend-item">
+                    <span class="legend-dot" style="background: #EF4444;"></span>
+                    <span class="legend-label">Pilgrimage</span>
+                </li>
+                <li class="legend-item">
+                    <span class="legend-dot" style="background: #A855F7;"></span>
+                    <span class="legend-label">Education</span>
+                </li>
+                <li class="legend-item">
+                    <span class="legend-dot" style="background: #22C55E;"></span>
+                    <span class="legend-label">Vocation</span>
+                </li>
+                <li class="legend-item">
+                    <span class="legend-dot" style="background: #F97316;"></span>
+                    <span class="legend-label">Retreat</span>
+                </li>
+                <li class="legend-item">
+                    <span class="legend-dot" style="background: #A1887F;"></span>
+                    <span class="legend-label">Business</span>
+                </li>
+                <li class="legend-item">
+                    <span class="legend-dot" style="background: #166534;"></span>
+                    <span class="legend-label">Campus</span>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="features-container">
+            <h2 class="section-title">Connect the dots.</h2>
+            <p class="section-subtitle">Discover everything Catholic in your community.</p>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">⛪</div>
+                    <h3 class="feature-title">Churches</h3>
+                    <p class="feature-desc">Find parishes and Mass times near you</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">✝️</div>
+                    <h3 class="feature-title">Missionaries</h3>
+                    <p class="feature-desc">Connect with those serving the Church</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🚶</div>
+                    <h3 class="feature-title">Pilgrimages</h3>
+                    <p class="feature-desc">Discover shrines and sacred journeys</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">📚</div>
+                    <h3 class="feature-title">Education</h3>
+                    <p class="feature-desc">Catholic schools and formation programs</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🙏</div>
+                    <h3 class="feature-title">Vocations</h3>
+                    <p class="feature-desc">Explore religious communities</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🏕️</div>
+                    <h3 class="feature-title">Retreats</h3>
+                    <p class="feature-desc">Find spaces for spiritual renewal</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🏪</div>
+                    <h3 class="feature-title">Businesses</h3>
+                    <p class="feature-desc">Support Catholic-owned enterprises</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🎓</div>
+                    <h3 class="feature-title">Campus</h3>
+                    <p class="feature-desc">Campus ministries and Newman Centers</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Proof Section -->
+    <section class="social-proof">
+        <div class="social-container">
+            <div class="proof-stat">
+                <span class="stat-number" id="location-count" data-target="15789">0</span>
+                <span class="stat-label">Verified Catholic locations at launch</span>
+            </div>
+            
+            <div class="bulk-cta">
+                <p class="proof-text">
+                    <strong>Are you a Catholic organization?</strong> We're offering early adopter bulk pricing for umbrella organizations who want to bring Nave to their network once our product is launched for general availability.
+                </p>
+                <a href="mailto:oliver@catholicnave.com?subject=Bulk Partnership Inquiry" class="btn-secondary">
+                    Meet with Our Founder
+                </a>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="final-cta">
+        <div class="cta-container">
+            <h2 class="cta-headline">Ready to find your Catholic neighborhood?</h2>
+            
+            <form id="waitlist-form-bottom" class="cta-form">
+                <div class="form-group">
+                    <input 
+                        type="email" 
+                        id="email-input-bottom" 
+                        name="email" 
+                        placeholder="Enter your email" 
+                        required
+                        autocomplete="email"
+                    >
+                    <button type="submit" class="btn-primary">
+                        Join the Waitlist
+                    </button>
+                </div>
+            </form>
+            
+            <div id="form-success-bottom" class="form-success hidden">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path d="M10 0C4.48 0 0 4.48 0 10s4.48 10 10 10 10-4.48 10-10S15.52 0 10 0zm-2 15l-5-5 1.41-1.41L8 12.17l7.59-7.59L17 6l-9 9z" fill="currentColor"/>
+                </svg>
+                <span>You're on the list! We'll be in touch.</span>
+            </div>
+            
+            <div class="app-store-badge">
+                <div class="coming-soon-badge">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+                    </svg>
+                    <div class="badge-text">
+                        <span class="badge-small">Coming Soon to</span>
+                        <span class="badge-large">App Store</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="assets/whitenavelogo.png" alt="Nave" class="footer-logo-img">
+                <span class="footer-logo-text">Nave</span>
+            </div>
+            
+            <div class="footer-links">
+                <a href="mailto:oliver@catholicnave.com">Contact</a>
+            </div>
+            
+            <p class="footer-copyright">
+                © 2025 Nave. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Count Animation (runs independently) -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const counter = document.getElementById('location-count');
+            if (!counter) return;
+            
+            const target = parseInt(counter.dataset.target, 10);
+            let hasAnimated = false;
+            
+            function animateCount(element, target, duration = 2500) {
+                const startTime = performance.now();
+                
+                function easeOutQuart(t) {
+                    return 1 - Math.pow(1 - t, 4);
+                }
+                
+                function update(currentTime) {
+                    const elapsed = currentTime - startTime;
+                    const progress = Math.min(elapsed / duration, 1);
+                    const easedProgress = easeOutQuart(progress);
+                    const current = Math.floor(target * easedProgress);
+                    
+                    if (progress < 1) {
+                        element.textContent = current.toLocaleString();
+                        requestAnimationFrame(update);
+                    } else {
+                        element.textContent = target.toLocaleString() + '+';
+                    }
+                }
+                
+                requestAnimationFrame(update);
+            }
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting && !hasAnimated) {
+                        hasAnimated = true;
+                        animateCount(counter, target);
+                    }
+                });
+            }, { threshold: 0.3 });
+            
+            observer.observe(counter);
+        });
+    </script>
+
+    <!-- Firebase SDK -->
+    <script type="module" src="firebase-config.js"></script>
+    <script type="module" src="app.js"></script>
+</body>
+</html>
+
